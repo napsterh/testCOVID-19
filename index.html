@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test COVID-19</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <!--custom CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Prata&display=swap" rel="stylesheet">
+    <!--favicon-->
+    <link rel="icon" href="/img/covid.png">
+</head>
+<body>
+    <!--Navegacion-->
+      <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+        <div class="font-nav container py-1">
+                <h1>Test COVID-19</h1>
+        </div>
+      </nav>
+
+      <!--Header-->
+      <header class="main-header">
+        <div class="backgrouod-overlay text-white py-5">
+            <div class="container">
+                <div class="row py-4 pl-5 pr-5">
+                    <div class="text-dark col-md-8 text-center justify-content-center
+                     align-self-center">
+                        <h1>Autoevaluación del Coronavirus Covid-19</h1>
+                        <h5>Esta web esta desarrollado con el fin de poder descongestionar las líneas de emergencia <b>113</b></h5>
+                        <br>
+                        <br>
+                        <div class="buttonTest col-md-12">
+                            <button class="btn btn-primary btn-lg btn-block" data-toggle=modal data-target="#myModal1">Empezar test ahora</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/test.png" alt="Imagen del perfil"
+                        class="img-fluid d-none d-sm-block">
+                    </div>
+                </div>
+                <div class="hash row">
+                    <a href="https://twitter.com/search?q=%23YoMeQuedoEnCasa&src=typeahead_click">#YoMeQuedoEnCasa</a>
+                </div>
+                <div class="row col-md-12 justify-content-center text-dark">
+                    <p>Compártelo en tus redes:</p>
+                </div>
+                <div class="social row col-md-12 justify-content-center">
+                    <a href="https://wa.me/?text=*Realiza el test del Coronavirus Covid-19*%0D%0A%0D%0ASigue los pasos recomendados. *YoMeQuedoEnCasa*:%0A%0D%0Ahttps://google.com/" target=_blank>
+                        <i class="fab fa-whatsapp-square fa-3x mr-3"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-facebook-square fa-3x mr-3"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-twitter-square fa-3x mr-3"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-linkedin fa-3x mr-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+      </header>
+
+      <!-- Footer-->
+      <footer id="test">
+            <div class="container py-3">
+                <div class="row col-md-12">
+                    <div class="col s12 l3 text-white">
+                        Todos los derechos reservados ©Test Covid-19
+                    </div>
+                    <div class="col s12 l3 text-white">
+                        <u>
+                            <li><a href="https://www.who.int/es" target=_blank>Datos de la web oficial de la Organización Mundial de la Salud</a></li>
+                            <li><a href="https://www.cdc.gov/" target=_blank>Datos de Centers for Disease Control and Prevention</a></li>
+                            <li><a href="https://cnnespanol.cnn.com/2020/03/20/sintomas-del-coronavirus-esta-es-la-lista-completa-para-saber-cuando-pedir-ayuda/" target=_blank>Datos de CNN en Español</a></li>
+                            <li><a href="https://es.wikipedia.org/wiki/Pandemia_de_enfermedad_por_coronavirus_de_2019-2020" target=_blank>Datos de Wikipedia</a></li>
+                            <li>Ultima actualización: 23 de marzo del 2020 - 17:42 horas</li>
+                        </u>
+                    </div>
+                </div>
+            </div>
+      </footer>
+
+    <!-- Modal 1-->
+    <div class="modal fade" id=myModal1 tabindex=-1 role=dialog aria-labelledby=exampleModalLongTitle aria-hidden=true>
+        <div class="modal-dialog modal-lg" role=document>
+            <div class=modal-content>
+                <div class="modal-header py-1" >
+                    <b>Pregunta 1 de 3</b>
+                    <button type=button class=close style=color:white data-dismiss=modal>&times;</button>
+                </div>
+                <div id=screenCopy class=modal-body>
+                    <div class="titleModal row col-lg-12 py-2">
+                        <h4>En los últimos 14 días ¿Has estado en alguno de los siguientes lugares?</h4>
+                    </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-7 py-4">
+                                    <div class="pais-col row">
+                                            <div class="buttonSize col-6 col-sm-6">
+                                                <div class="col py-2">
+                                                    <button type="button" class="btn btn-outline-primary btn-block disabled">China</button>
+                                                </div>
+                                                <div class="col py-2">
+                                                    <button type="button" class="btn btn-outline-primary btn-block disabled">Italia</button>
+                                                </div>
+                                                <div class="col py-2">
+                                                    <button type="button" class="btn btn-outline-primary btn-block disabled">Francia</button>
+                                                </div>
+                                                <div class="col py-2">
+                                                    <button type="button" class="btn btn-outline-primary btn-block disabled">España</button>
+                                                </div>
+                                                <div class="col py-2">
+                                                    <button type="button" class="btn btn-outline-primary btn-block disabled">Alemania</button>
+                                                </div>
+                                            </div>
+                                            <div class="buttonSize col-6 col-sm-6">
+                                                <div class="col py-2">
+                                                    <button type="button" class="btn btn-outline-primary btn-block disabled">Japón</button>
+                                                </div>
+                                                <div class="col py-2">
+                                                    <button type="button" class="btn btn-outline-primary btn-block disabled">Corea del Sur</button>
+                                                </div>
+                                                <div class="col py-2">
+                                                    <button type="button" class="btn btn-outline-primary btn-block disabled">Singapur</button>
+                                                </div>
+                                                <div class="col py-2">
+                                                    <button type="button" class="btn btn-outline-primary btn-block disabled">Irán</button>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="img-preg col-md-5">
+                                    <img src="/img/travel.gif" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    <div class=container-fluid>
+                        <div class="row col-md-12">
+                            <div class="col-6">
+                                <button type=submit class="btn btn-lg btn-block btn-success justify-content-center" name=pregunta11 id=reply11 aria-label=reply11 value=1 onclick=displayRadioValue1yes()>Sí</button>
+                            </div>
+                            <div class=col-6>
+                                <button type=submit class="btn btn-lg btn-block btn-success justify-content-center" name=pregunta11 id=reply12 aria-label=reply12 value=0 onclick=displayRadioValue1no()>No</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer py-1">
+                    <button type="button" class="btn btn-danger" data-dismiss=modal>Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2-->
+    <div class="modal fade" id=myModal2 tabindex=-1 role=dialog aria-labelledby=exampleModalLongTitle aria-hidden=true>
+        <div class="modal-dialog modal-xl" role=document>
+            <div class=modal-content>
+                <div class="modal-header py-1" >
+                    <b>Pregunta 2 de 3</b>
+                    <button type=button class=close style=color:white data-dismiss=modal>&times;</button>
+                </div>
+                <div id=screenCopy class=modal-body>
+                    <div class="titleModal row col-lg-12 py-1">
+                        <h4>¿Has tenido <b>CONTACTO DIRECTO*</b> con alguna persona que:</h4>
+                    </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="preg2 col-md-8 py-3">
+                                    <div class="col py-2">
+                                        <button type="button" class="btn btn-outline-primary btn-block disabled"><b>Sea caso de estudio</b> de coronavirus(Covid-19)?</button>
+                                    </div>
+                                    <div class="col py-2">
+                                        <button type="button" class="btn btn-outline-primary btn-block disabled"><b>Sea Caso confirmado</b> de coronavirus(Covid-19)?</button>
+                                    </div>
+                                    <div class="col py-2">
+                                        <button type="button" class="btn btn-outline-primary btn-block disabled">Tenga indicios de Covid-19 y <b>viva</b> en la misma casa, departamento, vivienda, etc. que tu?</button>
+                                    </div>
+                                    <div class="col py-2">
+                                        <button type="button" class="btn btn-outline-primary btn-block disabled">Que haya <b>estado en uno de los lugares</b> citados anteriormente?</button>
+                                    </div>
+                                    <hr>
+                                    <p>
+                                       <b>*CONTACTO DIRECTO</b>
+                                       <ul>
+                                           <li> Tener contacto cara a cara , como por ejemplo, una conversación de varios minutos.</li>
+                                       </ul>
+                                    </p>
+                                </div>
+                                <div class="img-preg col-md-4 py-4 pl-1">
+                                    <img src="/img/cercano.gif" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    <div class=container-fluid>
+                        <div class="row col-md-12">
+                            <div class="col-6">
+                                <button type=submit class="btn btn-lg btn-block btn-success justify-content-center" name=pregunta11 id=reply11 aria-label=reply11 value=1 onclick=displayRadioValue2yes()>Sí</button>
+                            </div>
+                            <div class=col-6>
+                                <button type=submit class="btn btn-lg btn-block btn-success justify-content-center" name=pregunta11 id=reply12 aria-label=reply12 value=0 onclick=displayRadioValue2no()>No</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer py-1">
+                    <button type="button" class="btn btn-warning" data-dismiss=modal onclick=retornarModal1()>Regresar</button>
+                    <button type="button" class="btn btn-danger" data-dismiss=modal>Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3-->
+    <div class="modal fade" id=myModal3 tabindex=-1 role=dialog aria-labelledby=exampleModalLongTitle aria-hidden=true>
+        <div class="modal-dialog modal-xl" role=document>
+            <div class=modal-content>
+                <div class="modal-header py-1" >
+                    <b>Pregunta 3 de 3</b>
+                    <button type=button class=close style=color:white data-dismiss=modal>&times;</button>
+                </div>
+                <div id=screenCopy class=modal-body>
+                    <div class="titleModal row col-lg-12 py-1">
+                        <h4>Tienes alguno de estos <b>síntomas:</b></h4>
+                    </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8 py-2">
+                                    <div class="col py-2">
+                                        <button type="button" class="btn btn-outline-danger btn-block disabled"><b>Fiebre</b> (superior a los <b>37.5</b> grados centígrados)</button>
+                                    </div>
+                                    <div class="col py-2">
+                                        <audio id="myAudio">
+                                            <source src="/audio/tosSeca.mp3" type="audio/mpeg">
+                                          </audio>
+                                        <button type="button" onclick="playAudio()" class="btn btn-outline-danger btn-block disabled"><b>Tos seca</b> (que se siente en el pecho) <i class="ml-8 fa fa-volume-up" aria-hidden="true"></i> </button>
+                                    </div>
+                                    <div class="col py-2">
+                                        <button type="button" class="btn btn-outline-danger btn-block disabled"><b>Sensación de falta de aire</b> (tensión en el pecho)</button>
+                                    </div>
+                                    <div class="col py-2">
+                                        <button type="button" class="btn btn-outline-warning btn-block disabled"><b>Cansancio</b> (fatiga)</button>
+                                    </div>
+                                    <div class="col py-2">
+                                        <button type="button" class="btn btn-outline-warning btn-block disabled"><b>Dolor muscular en el cuerpo</b></button>
+                                    </div>
+                                    <div class="col py-2">
+                                        <button type="button" class="btn btn-outline-primary btn-block disabled"><b>Dolor de garganta</b> (congestión nasal)</button>
+                                    </div>
+                                </div>
+                                <div class="img-preg col-md-4 py-4 pl-1">
+                                    <img src="/img/tos.gif" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    <div class=container-fluid>
+                        <div class="preg3Button row col-md-12">
+                            <div class="col-6">
+                                <button type=submit class="btn btn-lg btn-block btn-success justify-content-center" name=pregunta11 id=reply11 aria-label=reply11 value=1 onclick=displayRadioValue3yes()>Sí</button>
+                            </div>
+                            <div class=col-6>
+                                <button type=submit class="btn btn-lg btn-block btn-success justify-content-center" name=pregunta11 id=reply12 aria-label=reply12 value=0 onclick=displayRadioValue3no()>No</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer py-1">
+                    <button type="button" class="btn btn-warning" data-dismiss=modal onclick=retornarModal2()>Regresar</button>
+                    <button type="button" class="btn btn-danger" data-dismiss=modal>Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal A -->
+    <div class="modal fade" id=myModalA tabindex=-1 role=dialog aria-labelledby=exampleModalLongTitle aria-hidden=true>
+        <div class="modal-dialog modal-xl" role=document>
+            <div class=modal-content>
+                <div class="modal-header py-2">
+                    <b>Quédate en casa</b>
+                    <button type=button class=close style=color:white data-dismiss=modal>&times;</button>
+                </div>
+                <div id=screenCopy class=modal-body>
+                    <div class="container">
+                        <div class="row">
+                            <div class="resultNo col-sm-12 py-1">
+                                <h3>Parece que NO tienes el coronavirus(Covid-19)</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 py-1">
+                                <p>Aunque no hayas estado en ninguna zona con evidencia de transmisión comunitaria ni hayas estado en contacto con ningún
+                                    caso sospechoso o confirmado, <b>si presentaras algún síntoma, llama al 113</b>
+                                    .Recuerda evitar hacer llamadas no urgentes.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-8 py-2">
+                                <h5>Sigue siempre los siguientes <b>consejos de prevención:</b> </h5>
+                                <ul>
+                                    <li> <b>Lávate las manos frecuentemente</b>(con agua y jabón o soluciones alcohólicas mayores a 70%), especialmente después del contacto directo con personas enfermas o su entorno. </li>
+                                    <li> <b>En el momento de toser o estornudar</b> tápate la boca y la naríz con pañuelos de un solo uso y deséchalos en la papelera.</li>
+                                    <li> <b>Evita el contacto cercano</b> (al menos una distancia de 2 metros) con personas que padecen infecciones respiratorias y presenten tos o estornudos.</li>
+                                    <li> <b>Evita compartir comida y utensilios</b> (cubiertos, vasos, servilletas, pañuelos, etc.) y otros objetos sin limpiarlos debidamente.</li>
+                                </ul>
+                            </div>
+                            <div class="img-preg col-sm-4 align-self-center py-2">
+                                <img id="img-ModalA" src="/img/lavado.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row col-md-12 justify-content-center text-dark">
+                                <a href="https://twitter.com/search?q=%23YoMeQuedoEnCasa&src=typeahead_click">#YoMeQuedoEnCasa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer py-1">
+                    <button type="button" class="btn btn-danger" data-dismiss=modal>Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal B -->
+    <div class="modal fade" id=myModalB tabindex=-1 role=dialog aria-labelledby=exampleModalLongTitle aria-hidden=true>
+        <div class="modal-dialog modal-xl" role=document>
+            <div class=modal-content>
+                <div class="modal-header py-2">
+                    <b>Quédate en casa</b>
+                    <button type=button class=close style=color:white data-dismiss=modal>&times;</button>
+                </div>
+                <div id=screenCopy class=modal-body>
+                    <div class="container">
+                        <div class="row">
+                            <div class="resultNo col-sm-12 py-1">
+                                <h3>Parece que NO tienes el coronavirus(Covid-19)</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 py-1">
+                                <p>Durante los próximos 14 días <b>continua controlando la posible aparición de nuevos síntomas</b></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 py-1">
+                                <p>En caso de que aparezcan los síntomas descritos, <b>llama al 113</b></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-8 py-2">
+                                <h5>Sigue siempre los siguientes <b>consejos de prevención:</b> </h5>
+                                <ul>
+                                    <li> <b>Lávate las manos frecuentemente</b>(con agua y jabón o soluciones alcohólicas mayores a 70%), especialmente después del contacto directo con personas enfermas o su entorno. </li>
+                                    <li> <b>En el momento de toser o estornudar</b> tápate la boca y la naríz con pañuelos de un solo uso y deséchalos en la papelera.</li>
+                                    <li> <b>Evita el contacto cercano</b> (al menos una distancia de 2 metros) con personas que padecen infecciones respiratorias y presenten tos o estornudos.</li>
+                                    <li> <b>Evita compartir comida y utensilios</b> (cubiertos, vasos, servilletas, pañuelos, etc.) y otros objetos sin limpiarlos debidamente.</li>
+                                </ul>
+                            </div>
+                            <div class="img-preg col-sm-4 align-self-center py-2">
+                                <img id="img-ModalB" src="/img/tapaboca.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row col-md-12 justify-content-center text-dark">
+                                <a href="https://twitter.com/search?q=%23YoMeQuedoEnCasa&src=typeahead_click">#YoMeQuedoEnCasa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer py-1">
+                    <button type="button" class="btn btn-danger" data-dismiss=modal>Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal B2 -->
+    <div class="modal fade" id=myModalB2 tabindex=-1 role=dialog aria-labelledby=exampleModalLongTitle aria-hidden=true>
+        <div class="modal-dialog modal-xl" role=document>
+            <div class=modal-content>
+                <div class="modal-header py-2">
+                    <b>Quédate en casa</b>
+                    <button type=button class=close style=color:white data-dismiss=modal>&times;</button>
+                </div>
+                <div id=screenCopy class=modal-body>
+                    <div class="container">
+                        <div class="row">
+                            <div class="resultNo col-sm-12 py-1">
+                                <h3>Parece que NO tienes el coronavirus(Covid-19)</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 py-1">
+                                <p>Durante los próximos 14 días <b>continua controlando la posible aparición de nuevos síntomas</b></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 py-1">
+                                <p>En caso de que aparezcan los síntomas descritos o el contacto se confirme positivo, <b>llama al 113</b></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-8 py-2">
+                                <h5>Sigue siempre los siguientes <b>consejos de prevención:</b> </h5>
+                                <ul>
+                                    <li> <b>Lávate las manos frecuentemente</b>(con agua y jabón o soluciones alcohólicas mayores a 70%), especialmente después del contacto directo con personas enfermas o su entorno. </li>
+                                    <li> <b>En el momento de toser o estornudar</b> tápate la boca y la naríz con pañuelos de un solo uso y deséchalos en la papelera.</li>
+                                    <li> <b>Evita el contacto cercano</b> (al menos una distancia de 2 metros) con personas que padecen infecciones respiratorias y presenten tos o estornudos.</li>
+                                    <li> <b>Evita compartir comida y utensilios</b> (cubiertos, vasos, servilletas, pañuelos, etc.) y otros objetos sin limpiarlos debidamente.</li>
+                                </ul>
+                            </div>
+                            <div class="img-preg col-sm-4 align-self-center py-2">
+                                <img id="img-ModalB2"src="/img/modalb2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row col-md-12 justify-content-center text-dark">
+                                <a href="https://twitter.com/search?q=%23YoMeQuedoEnCasa&src=typeahead_click">#YoMeQuedoEnCasa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer py-1">
+                    <button type="button" class="btn btn-danger" data-dismiss=modal>Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal C -->
+    <div class="modal fade" id=myModalC tabindex=-1 role=dialog aria-labelledby=exampleModalLongTitle aria-hidden=true>
+        <div class="modal-dialog modal-lg" role=document>
+            <div class=modal-content>
+                <div class="modal-header py-2">
+                    <b>Quédate en casa</b>
+                    <button type=button class=close style=color:white data-dismiss=modal>&times;</button>
+                </div>
+                <div id=screenCopy class=modal-body>
+                    <div class="container">
+                        <div class="row">
+                            <div class="resultSi col-sm-12 py-4">
+                                <h3>Es probable que tengas el coronavirus(Covid-19)</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-7 py-1">
+                                <h5>Recomendaciones a seguir: </h5>
+                                <div class="col py-2">
+                                    <button type="button" class="btn btn-outline-success btn-block disabled"><b>Evita el contacto</b> con otras personas.</button>
+                                </div>
+                                <div class="col py-2">
+                                    <button type="button" class="btn btn-outline-success btn-block disabled">En lo posible, <b>usa una mascarilla</b> para no infectar a las demás personas que se encuentren cerca.</button>
+                                </div>
+                                <div class="col py-2">
+                                    <button type="button" class="btn btn-outline-success btn-block disabled">Guarda <b>reposo</b> y <b>bebe muchos líquidos</b> y los síntomas desaparecerán en algunos días.</button>
+                                </div>
+                                <div class="col py-2">
+                                    <button type="button" class="btn btn-outline-success btn-block disabled">En caso se complique, llama de inmediato a la línea <b>113</b> o acércate al centro de salud más cercano.</button>
+                                </div>
+                            </div>
+                            <div class="img-preg col-sm-5">
+                                <img id="img-ModalC" src="/img/descansar.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row col-md-12 justify-content-center text-dark">
+                                <a href="https://twitter.com/search?q=%23YoMeQuedoEnCasa&src=typeahead_click">#YoMeQuedoEnCasa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer py-1">
+                    <button type="button" class="btn btn-danger" data-dismiss=modal>Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal D -->
+    <div class="modal fade" id=myModalD tabindex=-1 role=dialog aria-labelledby=exampleModalLongTitle aria-hidden=true>
+        <div class="modal-dialog modal-xl" role=document>
+            <div class=modal-content>
+                <div class="modal-header py-2">
+                    <b>HOOOM</b>
+                    <button type=button class=close style=color:white data-dismiss=modal>&times;</button>
+                </div>
+                <div id=screenCopy class=modal-body>
+                    <div class="container">
+                        <div class="row">
+                            <div class="resultNo col-sm-12 py-1">
+                                <h3>Parece que NO tienes el coronavirus(Covid-19), pero extrema las precauciones.</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 py-1">
+                                <p>Durante los próximos 14 días <b>continua controlando la posible aparición de nuevos síntomas o el empeoramiento de los actuales.</b></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 py-1">
+                                <p>En caso de que aparezcan los síntomas descritos o el contacto se confirme positivo, <b>llama al 113</b></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-8 py-2">
+                                <h5>Sigue siempre los siguientes <b>consejos de prevención:</b> </h5>
+                                <ul>
+                                    <li> <b>Lávate las manos frecuentemente</b>(con agua y jabón o soluciones alcohólicas mayores a 70%), especialmente después del contacto directo con personas enfermas o su entorno. </li>
+                                    <li> <b>En el momento de toser o estornudar</b> tápate la boca y la naríz con pañuelos de un solo uso y deséchalos en la papelera.</li>
+                                    <li> <b>Evita el contacto cercano</b> (al menos una distancia de 2 metros) con personas que padecen infecciones respiratorias y presenten tos o estornudos.</li>
+                                    <li> <b>Evita compartir comida y utensilios</b> (cubiertos, vasos, servilletas, pañuelos, etc.) y otros objetos sin limpiarlos debidamente.</li>
+                                </ul>
+                            </div>
+                            <div class="img-preg col-sm-4 align-self-center py-2">
+                                <img id="img-ModalC" src="/img/lavado.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row col-md-12 justify-content-center text-dark">
+                                <a href="https://twitter.com/search?q=%23YoMeQuedoEnCasa&src=typeahead_click">#YoMeQuedoEnCasa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer py-1">
+                    <button type="button" class="btn btn-danger" data-dismiss=modal>Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Bootstrap JS-->
+    <script src="/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
